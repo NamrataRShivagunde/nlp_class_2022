@@ -37,8 +37,6 @@
   
 
   
-
-  
   
 
   
@@ -48,7 +46,7 @@
   
 
   
-      ,"page9": {
+      ,"page8": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://text-machine-lab.github.io/nlp_class_2022/robots.txt",
