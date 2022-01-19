@@ -1,5 +1,16 @@
 {
   
+    
+        "post0": {
+            "title": "Setting up the environment",
+            "content": "If you already have anaconda/conda/miniconda/conda-forge, proceed to step 7. . Download conda installer. | wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh . NOTE 1a: if this fails with “wget: command not found” install wget via “sudo apt install wget” (Ubuntu) or “brew install wget” (MacOS). Then try to do step 1 again. . NOTE 1b: alternatively, you can just follow the link above using your browser and download the file this way. . Install miniconda. | bash ~/miniconda.sh . Read and accept all licences. | When asked where to install conda, just press enter to install it in the default directory. | IMPORTANT: Then it will ask you “Do you wish the installer to initialize Miniconda3”. Type “yes” and press enter. | IMPORTANT: Restart your terminal session – open and close your terminal window. | NOTE: If you don’t want conda to start base envorinment in every terminal you open, you can execute conda config --set auto_activate_base false. . Create a new environment nlp_class with python 3.7. | conda create --name nlp_class python=3.7 . NOTE: If you have conda not found error, it might mean you skipped step 5 and now need to add conda to your PATH manually. It it easy to do, here’s a solution. . Activate this environment. | conda activate nlp_class . Install required libraries. | python -m pip install jupyterlab torch transformers datasets scikit-learn . Install a new kernel to a jupyter lab. | python -m ipykernel install --name nlp_class . NOTE: If step 10 fails, ask Vlad for help. . Launch jupyter lab. | jupyter lab . This should open a browser tab with Jupyter Lab running. . On the right, you will see a couple of available notebook enviornments under “Notebook” title. Select “nlp_class” and create a new notebook. . | Make sure all imports work. To do this execute the following code. . | import torch import sklearn import transformers import datasets . If this fails, ask Vlad for help. . Now you should be good to go. If you are wondering why we need conda and environments, you can read this blogpost. .",
+            "url": "https://text-machine-lab.github.io/nlp_class_2022/markdown/2022/01/18/Setting-up-the-environment.html",
+            "relUrl": "/markdown/2022/01/18/Setting-up-the-environment.html",
+            "date": " • Jan 18, 2022"
+        }
+        
+    
+  
 
   
   
@@ -7,7 +18,7 @@
   
 
   
-      "page2": {
+      ,"page2": {
           "title": "Course Schedule",
           "content": "Date Lecture Topic Slides Homework Quiz . Jan 18 | Intro to NLP |   | Setting up the environment |   | . Jan 25 | Lexical embeddings |   | Sentiment analysis with logistic regression | quiz 1 | . Feb 1 | Neural networks 101 |   | Fully-connected neural networks for text classification |   | . Feb 8 | Neural networks 201 |   | Babysitting neural networks |   | . Feb 15 | Attention mechanism |   | Language modeling |   | . Feb 22 | No Class, Monday schedule |   |   |   | . Mar 1 | Sequence to sequence networks |   | Machine translation |   | . Mar 8 | No Class, Spring break |   |   |   | . Mar 15 | Pre-training in NLP |   | Applying BERT |   | . Mar 22 | Fancy pre-training |   | Summarization with T5 |   | . Mar 29 | Scale in NLP |   | Project proposal |   | . Apr 5 | Topics |   | Supervised project work |   | . Apr 12 | Guest Lecture / Topics |   | Supervised project work |   | . Apr 19 | Guest Lecture / Topics |   | Supervised project work |   | . Apr 26 | Guest Lecture / Topics |   | Supervised project work |   | . May 3 | Presentations |   |   |   | . Homeworks are due at midnight on the day before the next lecture. | Quizzes are due immediately before the next lecture. | Homeworks must be submitted via Blackboard; you must submit a PDF of your homework and a link to a Github repository with your code. | .",
           "url": "https://text-machine-lab.github.io/nlp_class_2022/schedule/",
