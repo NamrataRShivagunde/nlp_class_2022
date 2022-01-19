@@ -100,9 +100,7 @@ window.onload = wrap_img;
     <ul id="toc" class="section-nav">
 </ul><p>If you already have anaconda/conda/miniconda/conda-forge, proceed to step 7.</p>
 
-<ol>
-  <li>Download conda installer.</li>
-</ol>
+<p><strong>Step 1.</strong> Download conda installer.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh
 </code></pre></div></div>
@@ -112,74 +110,53 @@ or “brew install wget” (MacOS). Then try to do step 1 again.</p>
 
 <p><strong>NOTE 1b:</strong> alternatively, you can just follow the link above using your browser and download the file this way.</p>
 
-<ol>
-  <li>Install miniconda.</li>
-</ol>
+<p><strong>Step 2.</strong>  Install miniconda.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bash ~/miniconda.sh
 </code></pre></div></div>
 
-<ol>
-  <li>Read and accept all licences.</li>
-  <li>When asked where to install conda, just press enter to install it in the default directory.</li>
-  <li>
-<strong>IMPORTANT:</strong> Then it will ask you “Do you wish the installer to initialize Miniconda3”. Type “yes” and press enter.</li>
-  <li>
-<strong>IMPORTANT:</strong> Restart your terminal session – open and close your terminal window.</li>
-</ol>
+<p><strong>Step 3.</strong> Read and accept all licences.
+<strong>Step 4.</strong> When asked where to install conda, just press enter to install it in the default directory.
+<strong>Step 5.</strong> <strong>IMPORTANT:</strong> Then it will ask you “Do you wish the installer to initialize Miniconda3”. Type “yes” and press enter.
+<strong>Step 6.</strong> <strong>IMPORTANT:</strong> Restart your terminal session – open and close your terminal window.</p>
 
 <p><strong>NOTE:</strong> If you don’t want conda to start base envorinment in every terminal you open, you can execute <code class="language-plaintext highlighter-rouge">conda config --set auto_activate_base false</code>.</p>
 
-<ol>
-  <li>Create a new environment <code class="language-plaintext highlighter-rouge">nlp_class</code> with python 3.7.</li>
-</ol>
+<p><strong>Step 7.</strong> Create a new environment <code class="language-plaintext highlighter-rouge">nlp_class</code> with python 3.7.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda create --name nlp_class python=3.7
 </code></pre></div></div>
 
 <p><strong>NOTE:</strong> If you have <code class="language-plaintext highlighter-rouge">conda not found</code> error, it might mean you skipped step 5 and now need to add conda to your <code class="language-plaintext highlighter-rouge">PATH</code> manually. It it easy to do, here’s <a href="https://stackoverflow.com/questions/35246386/conda-command-not-found">a solution</a>.</p>
 
-<ol>
-  <li>Activate this environment.</li>
-</ol>
+<p><strong>Step 8.</strong> Activate this environment.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda activate nlp_class
 </code></pre></div></div>
 
-<ol>
-  <li>Install required libraries.</li>
-</ol>
+<p><strong>Step 9.</strong> Install required libraries.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python -m pip install jupyterlab torch transformers datasets scikit-learn
 </code></pre></div></div>
 
-<ol>
-  <li>Install a new kernel to a jupyter lab.</li>
-</ol>
+<p><strong>Step 10.</strong> Install a new kernel to a jupyter lab.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python -m ipykernel install --name nlp_class
 </code></pre></div></div>
 
 <p><strong>NOTE:</strong> If step 10 fails, ask Vlad for help.</p>
 
-<ol>
-  <li>Launch jupyter lab.</li>
-</ol>
+<p><strong>Step 11.</strong> Launch jupyter lab.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jupyter lab
 </code></pre></div></div>
 
 <p>This should open a browser tab with Jupyter Lab running.</p>
 
-<ol>
-  <li>
-    <p>On the right, you will see a couple of available notebook enviornments under “Notebook” title.
+<p><strong>Step 12.</strong> On the right, you will see a couple of available notebook enviornments under “Notebook” title.
 Select “nlp_class” and create a new notebook.</p>
-  </li>
-  <li>
-    <p>Make sure all imports work. To do this execute the following code.</p>
-  </li>
-</ol>
+
+<p><strong>Step 13.</strong> Make sure all imports work. To do this execute the following code.</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">torch</span>
 <span class="kn">import</span> <span class="nn">sklearn</span>
